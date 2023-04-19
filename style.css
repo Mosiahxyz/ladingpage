@@ -7,12 +7,35 @@
 
 }
 
+
+
+html {
+
+        --s: 5rem;
+        --c: #000000;
+        --_s: calc(2*var(--s)) calc(2*var(--s));
+        --_g: 35.36% 35.36% at;
+        --_c: #0000 66%,#232632 68% 70%,#0000 72%;
+        background: 
+          radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+          radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+          radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+          radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+          repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+          radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+        background-attachment: fixed;
+}
+
+
 html, body{ 
 
     font-family: Arial, Helvetica, sans-serif; /*fontes*/
     color: black; /*cor da fonte*/
     font-size: 62.5%;
     text-rendering: optimizeLegibility;
+
+    height: 100%;
+    width: 100%;
 
 
 }
@@ -21,25 +44,30 @@ html, body{
 body{
 
     
-    background-color: black; /*cor de fundo*/
+
+    justify-content: center;
+   
     
-    /*alinhamento de margem*/
-    margin-top: 5%;
-    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+ 
 }
-
+    
 
 main{
 
     background-color: white;
 
     border-radius: 5rem;
-    margin-left: 15rem;
-    margin-right: 15rem;
 
+    width: 110rem;
+    height: 50rem;
 
     display: flex;
+    justify-content: center;
+    align-items: center;
     
 
 }
@@ -54,10 +82,10 @@ p{
 
 #titulo{
 
-    font-size: 5rem;
+    font-size: 10rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
-    padding-top: 9rem;
+    padding-top: 5rem;
   
 
 }
@@ -94,6 +122,15 @@ span{
     margin-top: 3rem;
     margin-left: 5rem;
 
+    color: #e8e8e8;
+
+    border: 2px solid #e8e8e8;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #212121;
+    font-size: small;
+    font-weight: bold;
+
  }
 
  button{
@@ -101,6 +138,10 @@ span{
     height: 4rem;
     width: 4rem;
 
+    font-weight: bolder;
+
+    background-color: black;
+    color: aliceblue;
     border-radius: 50%;
 
  }
